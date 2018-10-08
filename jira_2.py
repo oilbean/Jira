@@ -78,7 +78,7 @@ if __name__ == '__main__':
     # 统计24小时内未关闭问题
     jql_1="status = Resolved AND resolved <= -24h ORDER BY created DESC"
 
-    jira = JIRA('http://10.10.104.238:8090', basic_auth=('xiaomenghong', 'fso2018'))
+    jira = JIRA('url', basic_auth=('name', 'password'))
 
     a=[]
     s=project()

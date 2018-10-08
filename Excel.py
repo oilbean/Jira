@@ -23,7 +23,8 @@ def write(data,sheetname):
                 worksheet.write(i, 0, data[i])
 
 
-    workbook.save(r'F://demo1.xls')
+    path="F://"+sheetname+".xls"
+    workbook.save(path)
 
 
     return worksheet

@@ -1,0 +1,53 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body style="margin: 0; padding: 10;">
+	30天内活跃项目版本BUG统计及预警<br />
+	<br />
+	<table style="width:1300;" cellpadding="5" cellspacing="0" border="1" bordercolor="#000000">
+		<tbody>
+			<tr>
+				<td style="width:8%">
+					项目名称<br />
+				</td>
+				<td style="width:8%">
+					最近迭代版本<br />
+				</td>
+				<td style="width:8%">
+					最近BUG创建时间<br />
+				</td>
+				<td>
+					BUG总数<br />
+				</td>
+				<td style="width:1%">
+					分组数据<br />
+				</td>
+				<td>
+					won't fix 问题总数<br />
+				</td>
+				<td>
+					今日新建BUG<br />
+				</td>
+				<td>
+					今日解决BUG<br />
+				</td>
+				<td>
+					今日关闭BUG
+				</td>
+				<td style='color:red'>
+					未解决BUG数<br />
+				</td>
+				<td style='color:red'>
+					24小时未解决BUG数<br />
+				</td>
+				<td style='color:red'>
+					未验证BUG数<br />
+				</td>
+				<td style='color:red'>
+					24小时未验证BUG数<br />
+				</td>
+			</tr>
+			${project}
+			<tr><td>总计<br /></td><td><br /></td><td><br /></td><td><br /></td><td><br /></td><td>${wontfix_total}</td><td>${new_total}</td><td>${resloved_total}</td><td>${closed_total}</td><td style='color:red'>${unresolvde_total}<br /></td><td style='color:red'>${unresolvde_ot_total}</td><td style='color:red'>${unclosed_total}</td><td style='color:red'>${unclosed_ot_total}</td></tr>
+		</tbody>
+	</table>
+<br />
+</body>

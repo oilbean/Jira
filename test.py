@@ -22,11 +22,11 @@ import logging.config
 # with open(os.getcwd() + '/Template/' + 'recevers.txt', 'r') as f:
 #     recevers = f.read().splitlines()
 
-jira = JIRA(basic_auth=('xiaomenghong@creditease.cn', 'meng12..'),
-                  options={'server': 'http://jira.creditease.corp/'})
+jira = JIRA(basic_auth=(''),
+                  options={'server': ''})
 print(jira)
 
-# jira_caifu = JIRA("http://10.143.143.167:18085/", basic_auth=('admin', 'fso2016'))
+# jira_caifu = JIRA("", basic_auth=())
 # projects=jira_caifu.projects()
 #
 # print(projects)

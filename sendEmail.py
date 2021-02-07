@@ -48,10 +48,10 @@ def send_email(file_name,recevers,email_name):
     for i in range(len(receivers)):
         
         try:
-            smtpObj = smtplib.SMTP('email.creditease.cn')
+            smtpObj = smtplib.SMTP('')
             
-            sender = 'xiaomenghong@creditease.cn'
-            password="meng12.."
+            sender = ''
+            password=""
 
             login_result = smtpObj.login(sender, password)
             print(login_result)

@@ -622,9 +622,9 @@ if __name__ == '__main__':
 
     logging.info("有效时间"+str(expiryday))
 
-    jira_caifu = JIRA("http://10.143.143.167:18085/", basic_auth=('admin','fso2016'))
+    jira_caifu = JIRA()
 
-    jira_jishu = JIRA(basic_auth=('xiaomenghong@creditease.cn','meng12..'),options = {'server':'http://jira.creditease.corp/'})
+    jira_jishu = JIRA(basic_auth=(''),options = {'server':''})
 
 
 

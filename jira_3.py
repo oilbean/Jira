@@ -440,55 +440,13 @@ def issue_group(group,project_name,version,jira):
             if group[assignee] == "私募交易组":
                 Simu += 1
 
-            elif group[assignee] == "用户中心组":
-                Yonghu += 1
-
-            elif group[assignee] == "渠道服务组":
-                Qudao +=1
-
-            elif group[assignee] == "前端组":
-                Qianduan += 1
-
-            elif group[assignee] == "宜信财富APP组":
-                YixinApp += 1
-
-            elif group[assignee] == "宜信财富APP后端组":
-                YixinAppServer += 1
-
-            elif group[assignee] == "财富BI团队":
-                CaifuBI += 1
-
-            elif group[assignee] == "宜人指旺APP":
-                YrzhiwangAPP += 1
-
-            elif group[assignee] == "宜人财富APP后端":
-                YrcaifuAPPServer += 1
-
-            elif group[assignee] == "大众投资交易组":
-                Dazhong += 1
-
-            elif group[assignee] == "股票及保险团队":
-                Gpbx +=1
-
-            elif group[assignee] == "支付组":
-                Zhifuzu +=1
-
-            elif group[assignee] == "测试组":
-                Ceshi += 1
-
-            elif group[assignee] == "产品":
-                Chanpin += 1
-
-            elif group[assignee] == "股票业务组":
-                Gupiao += 1
-            elif group[assignee] == "宜人产品及H5":
-                YirenH5 += 1
+           
         else:
             logger.warning("缺陷"+str(i)+str(assignee))
 
 
 
-    total=dict(zip(['私募交易组','用户中心组','渠道服务组','前端组','宜信财富APP组','宜信财富APP后端组','财富BI团队','宜人财富APP','宜人财富APP后端','大众投资交易组','股票及保险团队','支付组','测试组','产品组','股票业务组','宜人产品及H5'],
+    total=dict(zip(['私募交易组'],
                    [Simu,Yonghu,Qudao,Qianduan,YixinApp,YixinAppServer,CaifuBI,YrzhiwangAPP,YrcaifuAPPServer,Dazhong,Gpbx,Zhifuzu,Ceshi,Chanpin,Gupiao,YirenH5]))
     return total
 
@@ -622,9 +580,9 @@ if __name__ == '__main__':
 
     logging.info("有效时间"+str(expiryday))
 
-    jira_caifu = JIRA("http://10.143.143.167:18085/", basic_auth=('admin','fso2016'))
+    jira_caifu = JIRA()
 
-    jira_jishu = JIRA(basic_auth=('xiaomenghong@creditease.cn','meng12..'),options = {'server':'http://jira.creditease.corp/'})
+    jira_jishu = JIRA(basic_auth=(),options = {'server':''})
 
 
 
